@@ -30,7 +30,7 @@ struct CityListView: View {
                 }
                 .padding()
                 
-                List(cityViewModel.cities,id: \.id){ city in
+                List(cityViewModel.cities){ city in
                         HStack{
                             Text(city.name.removingPercentEncoding ?? "")
                             Spacer()
